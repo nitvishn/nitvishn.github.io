@@ -29,9 +29,9 @@ class Main extends Component {
         return (
             <>
                 <Canvas />
-                {/* <Header /> */}
+                <Header />
                 {/* <Sidebar></Sidebar> */}
-                {/* <div className="container">
+                <div className="container">
                     <div className="row">
                         <div className="col"></div>
                         <div className="col-12 col-sm-10 col-md-8">
@@ -45,7 +45,7 @@ class Main extends Component {
                         <div className="col"></div>
                     </div>
                 </div>
-                <Footer /> */}
+                <Footer />
             </>
         );
     }
