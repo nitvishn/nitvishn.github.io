@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import { Nav, NavbarToggler, Collapse, NavLink } from 'reactstrap';
+import { Nav, NavbarToggler, Collapse } from 'reactstrap';
+import { NavLink } from 'react-router-dom'
 
 class Header extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            isNavOpen: true,
+            isNavOpen: false,
         };
 
         this.toggleNav = this.toggleNav.bind(this);
@@ -20,16 +21,21 @@ class Header extends Component {
 
     render() {
         return (
-            <Nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <Nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
-                    <a className="navbar-brand" href="#">Vishnu Nittoor</a>
+                    <a className="navbar-brand" href="/home">Vishnu Nittoor</a>
                     <NavbarToggler onClick={this.toggleNav}></NavbarToggler>
                     <Collapse isOpen={this.state.isNavOpen} navbar>
-                        <div className="navbar-nav text-center">
-                            <NavLink className="nav-link" to="/">Home</NavLink>
-                            <a className="nav-link" href="#">Features</a>
-                            <a className="nav-link" href="#">Pricing</a>
-                            <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <div className="navbar-nav">
+                            <NavLink className="nav-link px-3" to="/home">Home</NavLink>
+                            <NavLink className="nav-link px-3" to="/research">Research</NavLink>
+                            <NavLink className="nav-link px-3" to="/work">Work Experience</NavLink>
+                            <NavLink className="nav-link px-3" to="/projects">Projects</NavLink>
+                            <NavLink className="nav-link px-3" to="/talks">Talks/Videos</NavLink>
+                            <NavLink className="nav-link px-3" to="/organisations">Organisations</NavLink>
+                            <NavLink className="nav-link px-3" to="/education">Education</NavLink>
+                            <NavLink className="nav-link px-3" to="/resume">Resume</NavLink>
+                            <NavLink className="nav-link px-3" to="/blog">Blog</NavLink>
                         </div>
                     </Collapse>
                 </div>
