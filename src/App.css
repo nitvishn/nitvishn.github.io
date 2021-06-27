@@ -10,3 +10,11 @@
 .navbar-light .navbar-nav .nav-link:hover {
   color: black;
 }
+
+.react-p5{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+}

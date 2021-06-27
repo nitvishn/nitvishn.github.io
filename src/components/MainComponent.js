@@ -4,6 +4,7 @@ import Footer from "./FooterComponent";
 import Home from "./HomeComponent";
 import Work from "./WorkComponent";
 import Sidebar from "./SidebarComponent";
+import Canvas from "./p5Component";
 
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -27,9 +28,10 @@ class Main extends Component {
 
         return (
             <>
-                <Header />
+                <Canvas />
+                {/* <Header /> */}
                 {/* <Sidebar></Sidebar> */}
-                <div className="container">
+                {/* <div className="container">
                     <div className="row">
                         <div className="col"></div>
                         <div className="col-12 col-sm-10 col-md-8">
@@ -43,7 +45,7 @@ class Main extends Component {
                         <div className="col"></div>
                     </div>
                 </div>
-                <Footer />
+                <Footer /> */}
             </>
         );
     }
