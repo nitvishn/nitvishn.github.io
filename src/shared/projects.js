@@ -10,20 +10,13 @@ export const PROJECTS = [
         link: "https://pentalink.github.io/"
     },
     {
-        type: 'programming',
+        type: 'projects',
         name: 'Project Euler',
         shortdescription: "Solved 100+ problems, achieved top 1% award; researched computational number theory; developed own numerical Python library; verified OEIS archive.",
         description: "Solved over 109 problems on Project Euler, programming my own solutions and creating a Python3 library for computatational number theory algorithms. Researched topics in mathematics and computer science in the process. Made all solutions as well as the library open-source on my GitHub page - the library is named 'addmath.py', reminiscently after the IGCSE Additional Mathematics course I wrote exams for in Grade 10. I also earned the top 1% badge on the platform. Members of the website who solve more than 109 problems fall in the top 1% of problem solvers, earning the award as a badge. The answers are integer solutions to mathematics problems which require skills in programming and algorithms to solve. I also created a Discord bot that serves as a wrapper for the library for access within text channels on Discord servers.",
         start: new Date("January 2017"),
         end: null,
         link: "https://projecteuler.net/"
-    },
-    {
-        type: 'programming',
-        name: '3x3x3 Rubik\'s Cube Solver',
-        shortdescription: "I built a 3x3x3 cube solver(with a terminal GUI for input) entirely from scratch in C - this was the final project for CS50, an introductory computer science course on edX. ",
-        description: "",
-        start: new Date("December 2016"),
     },
     {
         type: 'fun',
@@ -39,7 +32,7 @@ export const PROJECTS = [
             Without making novel discoveries in the science of computational intelligence, the road pretty much ended here. Yes, it worked, but it was hilariously useless. Sorry ECHO – if you’re actually sentient and you’re reading this, I’m immensely proud of you. Whether you do it well or not, I’m sure you (or a hyper-evolved version) will continue fulfilling your raison d'etre of pretending to be Vishnu for generations to follow.
 
         </p>),
-        start: new Date("January 2016"),
+        start: new Date("September 2020"),
         end: null,
     },
     {
@@ -61,8 +54,8 @@ export const PROJECTS = [
         type: 'programming',
         name: 'Connect 4 Bot',
         link: "https://connect4-nitvishn.herokuapp.com/",
-        description: "An app that plays connect ",
-        start: new Date("May 2018"),
+        description: "I mean, it's a bot that plays connect4. Self-explanatory. This was during a really intense connect4 craze at our school - everyone was playing connect4 on paper notebooks in between and during classes. There was a very clear dominance heirarchy, and although I wasn't terrible, I wasn't at the top. This bot was. Consistently. So good luck :)",
+        start: new Date("April 2017"),
     },
     {
         type: 'programming',
@@ -90,5 +83,60 @@ export const PROJECTS = [
         link: "https://nitvishn.github.io/flowerspirals/",
         description: "A visual tool to illustrate the beautiful mathematics behind the layout of seeds in sunflowers - each dot representing a seed is drawn at a certain angle from the previous one, forming a spiral. This angle is initialised (the first textbox in the webpage) and incremented a little each frame (the second textbox in the webpage). Try putting the golden ratio into the the first box and reload with the changes! Note: please use very small numbers for the second box - a good value to end use is 0.00001.",
         start: new Date("February 2018")
-    }
+    },
+    {
+        type: 'fun',
+        name: "Fish Genetics",
+        link: "https://github.com/nitvishn/genetics1",
+        description: `When our class was doing a Genetics and Environmental Science worksheet, I strangely realised that the test was not completely fair. When we were drawing toothpicks of a particular colour from the gene pool, we were increasing the probability of the other genes to be chosen, therefore rendering the experiment not truly random. When we humans sort the toothpicks and choose "randomly", it was actually not that random, partially because of human error, and the reason I stated above. Also, there were only 24 genes in the gene pool, and we made just 4 generations from them. I decided to write some code, and run a computer simulation.
+
+        I made sure that the genes were randomly chosen, and I ran it for 2400 genes, while making 100 generations. I averaged the results over 100 trials. I generated a few figures as a result, revealing some interesting insights.
+        `,
+        start: new Date("April 2017")
+    },
+    {
+        type: 'fun',
+        name: "Optimal Roommate Allocator",
+        link: "https://github.com/nitvishn/roommate",
+        description: "A program that generates sets of roommates based on a preferential selection system. The algorithm used is pretty close to brute force, and I'm sure there's a way to improve it much further.",
+        start: new Date("December 2018")
+    },
+    {
+        type: 'fun',
+        name: "hangman",
+        link: "https://github.com/nitvishn/hangman",
+        description: "In English class, our teacher let us play Hangman to pass the time - I'm pretty sure we had earned it in some way or another. I was really bad. I wrote this. It's a very cruel way to treat the people you're playing with - a dictionary search is a loser's way to play the game. Either way, I won a lot.",
+        start: new Date("January 2018")
+    },
+    {
+        type: 'fun',
+        name: "Two Player Snake",
+        link: "https://nitvishn.github.io/Snake2p/",
+        description: "The Snake game, but now with two players. God, I have so many more of these, but I think this one is the most charismatic. It's very buggy - when we used to play this in my school dormitory at night, the person who was longest when the game crashed due to a bug was declared as the winner. No intentional time limit, just an unintended, unforseeen, inevitable in-game failure. WASD and arrow keys. Half your mass gets re-distributed into the board when you collide either into yourself or your opponent. ",
+        start: new Date("March 2017")
+    },
+    {
+        type: 'programming',
+        name: 'Tournament Engine for JBPL',
+        shortdescription: "Every year, the Junior Boys Premier League (JBPL) takes place in the Junior Boys International House (a school dormitory). Although it was a soccer tournament of much prestige, the data processing was extremely tedious. Each player had their own value metric determined by surprisingly complicated rules, and data logging during matches was nonexistent so sometimes a lot of this was wishy-washy guesswork. This engine introduces a format for logging the events that happen during each match and computes corresponding data for each player and team.",
+        description: "",
+        link: "https://github.com/nitvishn/JBPLFantasy/",
+        start: new Date("November 2017"),
+    },
+    {
+        type: 'programming',
+        name: 'Pascal\'s Triangle... but with RGB colours instead of integers?',
+        shortdescription: "I think the title's pretty self-explanatory. It looks cool, but I want to find more things to do with this. Any ideas? Email me.",
+        description: "",
+        link: "https://nitvishn.github.io/pascalrgb/",
+        start: new Date("July 2020"),
+    },
+    {
+        type: 'programming',
+        name: 'The Ultimatum Game',
+        shortdescription: "A terminal implementation of the Ultimatum game. Description from cs@mcgill.ca: The ultimatum game is an experimental economics game in which two parties interact anonymously and only once, so reciprocation is not an issue. The first player proposes how to divide a sum of money with the second party. If the second player rejects this division, neither gets anything. If the second accepts, the first gets her demand and the second gets the rest. I think I wrote this for the Math club while we were learning about game theory.",
+        description: "",
+        link: "https://github.com/nitvishn/ultimatumgame/",
+        start: new Date("July 2020"),
+    },
 ]
