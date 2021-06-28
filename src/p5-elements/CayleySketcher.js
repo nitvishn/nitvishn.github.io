@@ -3,12 +3,27 @@ import { propTypes } from "react-bootstrap/esm/Image";
 
 let images = [];
 let imgSize, scaleFactor;
-const N = 9
+const N = 6
 var currentNum = 0;
 var incr = 1
 var X = [];
 var Y = [];
 var laggingCursor;
+var timers = [
+    {
+        interval: 1000,
+        timeElapsed: 0,
+        updateFunc: () => {
+            if (currentNum === 0 && incr === -1) {
+                incr = 1;
+            }
+            if (currentNum === N && incr === 1) {
+                incr = -1;
+            }
+            currentNum += incr;
+        }
+    }
+]
 
 export function preload(p5) {
     for (var i = 1; i <= N; i++) {
@@ -45,6 +60,14 @@ export function draw(p5) {
     // console.log(laggingCursor.position);
     updateLaggingCursor(p5);
     // console.log(p5.deltaTime);
+    for (i = 0; i < timers.length; i++) {
+        var timer = timers[i];
+        timer.timeElapsed += p5.deltaTime;
+        if (timer.timeElapsed >= timer.interval) {
+            timer.timeElapsed = 0;
+            timer.updateFunc();
+        }
+    }
 };
 
 function updateLaggingCursor(p5) {
@@ -92,14 +115,7 @@ function drawCayley(p5, x, y) {
 }
 
 export function mouseClicked(p5, thing) {
-    if (currentNum === 0 && incr === -1) {
-        incr = 1;
-    }
-    if (currentNum === N && incr === 1) {
-        incr = -1;
-    }
-    currentNum += incr;
-    // console.log(currentNum, incr);
+
 }
 
 function loadImagePositions(p5) {

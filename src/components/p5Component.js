@@ -9,6 +9,7 @@ class Canvas extends Component {
 
         return (
             <>
+                <div id="p5_loading" class="loadingclass"></div>
                 <Sketch preload={preload} setup={setup} draw={draw} mouseClicked={mouseClicked}></Sketch>
             </>
         );
