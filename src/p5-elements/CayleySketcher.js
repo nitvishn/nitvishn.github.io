@@ -3,7 +3,7 @@ import { propTypes } from "react-bootstrap/esm/Image";
 
 let images = [];
 let imgSize, scaleFactor;
-const N = 6
+const N = 7
 var currentNum = 0;
 var incr = 1
 var X = [];
@@ -44,11 +44,14 @@ export function setup(p5, canvasParentRef) {
     }
 };
 
+const lerp = (x, y, a) => x * (1 - a) + y * a;
+const clamp = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a));
+const invlerp = (x, y, a) => clamp((a - x) / (y - x));
+
 export function draw(p5) {
     p5.background(255);
     p5.imageMode(p5.CENTER);
-    p5.stroke(255, 0, 0)
-    p5.fill(255, 0, 0)
+    // var o = 255 / currentNum;
     // p5.circle(laggingCursor.position.x, laggingCursor.position.y, 50)
     const offset = getOffset(p5, 300);
     p5.translate(offset.x, offset.y);
@@ -110,6 +113,7 @@ function drawCayley(p5, x, y) {
         const h = img.height;
         const w = img.width;
         const scaleFactor = h / imgSize;
+        // p5.tint(0, 153, 204, 126);
         p5.image(img, x, y, w / scaleFactor, h / scaleFactor);
     }
 }

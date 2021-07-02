@@ -22,33 +22,43 @@ export const PROJECTS = [
         type: 'fun',
         name: 'ECHO (Experimental Counterfeiter of Human Occupancy)',
         shortdescription: "",
-        description: (<p>
-            This quarantine, I built my own computer. I had spent months researching a specific graphics processing unit that I wanted – a raytracing card with tensor cores. Sure, I wanted it to play video games at ultra-settings, to run research simulations, and to edit videos. There was, however, another crucial reason I was excited: I could now take my online class shenanigans to the next level.
-            The day I got it, I launched Open Broadcasting Software and got to work. I started rendering videos of myself sitting in my chair, shifting around, revolving, staring at the ceiling, and perhaps taking a little scribble here and there. Loop it back. Render another. Then, the phrases: I'd record multiple variations of myself going "Yes, I understand", “Absolutely”, “No, I don’t think I have any doubts for now”. I recorded myself in tens of different ponderous gazes, understanding nods, and reflective head movements of clear affirmation. “That’s right; I’ll get to work on that right away”.
-            Soon, I had an entire video library of all possible generic reactions and idle resting positions. Next, I programmed a script that automatically logged into my classes on time.
-            I named it the Experimental Counterfeiter of Human Occupancy (or ECHO for short). With ECHO, I was finally ready to automate my presence in online class.
-            I had never looked forward to an online Monday morning this much. I left ECHO running overnight and sat down at my system the next morning. I watched it login into my morning class at 7:45, greet the class entirely out of context, and proceed to simulate an unnaturally diligent Vishnu staring with focus at his desktop monitor.
-            It didn’t take me long to realize, sitting in my chair with my celebratory bowl of cereal, that I was being counterproductive. Every time I was prompted to say something, I had to assist ECHO in choosing the correct responses.
+        description: `<p>
+            This quarantine, I built my own computer. I had spent months researching a specific graphics processing unit that I wanted – a raytracing card with tensor cores. Sure, I wanted it to play video games at ultra-settings, to run research simulations, and to edit videos. There was, however, another crucial reason I was excited: I could now take my online class shenanigans to the next level.<br/><br/>
+            The day I got it, I launched Open Broadcasting Software and got to work. I started rendering videos of myself sitting in my chair, shifting around, revolving, staring at the ceiling, and perhaps taking a little scribble here and there. Loop it back. Render another. Then, the phrases: I'd record multiple variations of myself going "Yes, I understand", “Absolutely”, “No, I don’t think I have any doubts for now”. I recorded myself in tens of different ponderous gazes, understanding nods, and reflective head movements of clear affirmation. “That’s right; I’ll get to work on that right away”.<br/><br/>
+            Soon, I had an entire video library of all possible generic reactions and idle resting positions. Next, I programmed a script that automatically logged into my classes on time.<br/><br/>
+            I named it the Experimental Counterfeiter of Human Occupancy (or ECHO for short). With ECHO, I was finally ready to automate my presence in online class.<br/><br/>
+            I had never looked forward to an online Monday morning this much. I left ECHO running overnight and sat down at my system the next morning. I watched it login into my morning class at 7:45, greet the class entirely out of context, and proceed to simulate an unnaturally diligent Vishnu staring with focus at his desktop monitor.<br/><br/>
+            It didn’t take me long to realize, sitting in my chair with my celebratory bowl of cereal, that I was being counterproductive. Every time I was prompted to say something, I had to assist ECHO in choosing the correct responses.<br/><br/>
             Without making novel discoveries in the science of computational intelligence, the road pretty much ended here. Yes, it worked, but it was hilariously useless. Sorry ECHO – if you’re actually sentient and you’re reading this, I’m immensely proud of you. Whether you do it well or not, I’m sure you (or a hyper-evolved version) will continue fulfilling your raison d'etre of pretending to be Vishnu for generations to follow.
 
-        </p>),
+        </p>`,
         start: new Date("September 2020"),
         end: null,
     },
     {
         type: 'project',
-        name: 'GreenWheels',
-        position: 'Lead Programmer',
-        shortdescription: null,
-        description: "Designed a carpooling system to be used amongst members of residential communities.I solved the travelling salesman problem using a greedy greedy, and built an algorithm that optimises carpooling groups taking into account parameters such as schedule, social preferences, car size, and more.",
-        start: new Date("January 2018"),
-    }, {
-        type: 'project',
         name: 'Can I Have Water?',
         position: 'Programmer',
-        shortdescription: "Can I have water",
-        description: null,
+        link: 'https://github.com/nitvishn/water/',
+        shortdescription: null,
+        description: "In Bangalore, a large part of the water supply network uses tankers for transportation. There are a few problems with this system. Suppliers don’t have accurate data for their customers’ water needs, there is a rampant inequality in water distribution, and the tankers don't have a system to decide routes. After conducting researching the water consumption needs of households within Bangalore, we built a model that uses sinusoidal regression to predict future water consumption. We identified redundant resources within tanker networks and optimised routes, resulting in a fewer number of tankers needed to be used, and a higher number of communities fulfilled per tanker. We also built a client side interface for households and communities to register themselves and track their water usage. The algorithms that ran in the backend are on the linked repository.",
         start: new Date("January 2020"),
+    },
+    {
+        type: 'project',
+        name: 'GreenWheels',
+        position: 'Lead Programmer and Project Director',
+        link: "https://github.com/nitvishn/CarPooling/",
+        shortdescription: null,
+        description: "Designed a carpooling system to be used amongst members of residential communities in Bangalore. I solved the travelling salesman problem using a greedy approach, and built an algorithm that optimises carpooling groups taking into account parameters such as schedule, social preferences, car size, and more.",
+        start: new Date("January 2018"),
+    },
+    {
+        type: 'programming',
+        name: 'Pong, but the paddles move in 2 dimensions',
+        link: 'https://github.com/nitvishn/pong/',
+        description: "It's local multiplayer pong, but you can use WASD and arrow keys to move each paddle around in two dimensions. They also teleport when they cross boundaries. It's a very simple change to a classic game, but tt's really, really fun. We played it a lot in dorm, and I was most definitely the best. Probably because I spent so many hours iteratively programming the game, testing it, challenging my friends to duels, losing, and then tweaking the code so that I had an edge the next time. Fun. Interesting.",
+        start: new Date("August 2019"),
     },
     {
         type: 'programming',

@@ -18,3 +18,22 @@
   z-index: -1;
   opacity: 0.1;
 }
+
+html {
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: #006994;
+}
+
+/* visited link
+a:visited {
+  color: purple;
+} */
+
+/* mouse over link */
+a:hover {
+  color: coral;
+}

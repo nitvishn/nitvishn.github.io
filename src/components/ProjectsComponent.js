@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import parse from 'html-react-parser';
 
 class Projects extends Component {
     render() {
@@ -20,7 +20,7 @@ class Projects extends Component {
                     <h4>{exp.position}</h4>
                     <h5>{formatDate(exp.start)} {exp.end ? <span>&#8212;</span> : ""} {formatDate(exp.end)}</h5>
                     {link}
-                    <p>{exp.description ? exp.description : exp.shortdescription}</p>
+                    <p>{parse(exp.description ? exp.description : exp.shortdescription)}</p>
                 </div>
             )
         }
