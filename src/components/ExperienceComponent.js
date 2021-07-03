@@ -4,12 +4,13 @@ import parse from 'html-react-parser';
 class Experience extends Component {
     render() {
         const formatDate = function (d) {
-            if (d === "Present") {
-                return "Present"
-            } else if (d === null || d === undefined) {
+            if (d === null || d === undefined) {
                 return ""
             }
-            return new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long' }).format(d);
+            else {
+                return d;
+            }
+            // return new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long' }).format(d);
         }
         const work = this.props.work.map((exp) => {
             const link = exp.link ? (<h6><a href={exp.link}>{exp.link}</a></h6>) : (<></>)

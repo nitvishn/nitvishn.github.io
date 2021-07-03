@@ -5,7 +5,7 @@ export const ORGANISATIONS = [
         description: `
             Project Neumann is an informal organisation which is an evolution of the Computational Thinking Club. It is a more extensive intercollegiate initiative partly comprised of the same organising members as the club. The members meet multiple times a week to work on projects, discuss and conduct research, and collectively direct our explorations of computer science and mathematics. In the future, we plan to provide a platform for educating high schoolers in college-level computer science concepts and a network of undergraduate researchers with whom they may undertake projects.
         `,
-        start: new Date("April 2018"),
+        start: "April 2018",
         end: "Present",
     },
     {
@@ -19,7 +19,7 @@ export const ORGANISATIONS = [
         While Rishi worked on the front-end, I built a back-end server and programmed an automatic integration with a notes editor. Together, we designed an easy-to-use workflow for writing and publishing notes. After a month’s programming and debugging, Blitz Notes, upon release in February 2020, quickly evolved into a massive undertaking. We assigned subject leads and assembled a team of over 30 people in creating up-to-date notes. We are a well-known IB/IGCSE resource. As of July 3rd 2021, we had <strong>143,093 pageviews</strong> from <strong>39,928 regular users</strong> across <strong>148 countries</strong>. We have over <strong>350 webpages</strong> of notes within the site.
         `,
         link: "https://www.blitznotes.org/",
-        start: new Date("April 2018"),
+        start: "April 2018",
         end: "Present",
     },
     {
@@ -28,7 +28,7 @@ export const ORGANISATIONS = [
         description: `With a team of 5 organisers, I helped brainstorm and devise a rigorous curriculum in mathematics and computer science, holding weekly lessons. I led the team in teaching programming and algorithms to 30+ members from grades 7-12. We also ran an online, open-source data science course, teaching skills in data visualization and analysis using programming to IB and IGCSE students. All the material for the course is available on BlitzNotes in the attached link. 
         `,
         link: "https://www.blitznotes.org/datascience/",
-        start: new Date("August 2019"),
-        end: new Date("March 2021"),
+        start: "August 2019",
+        end: "March 2021",
     }
 ]
