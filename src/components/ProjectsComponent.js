@@ -3,13 +3,15 @@ import parse from 'html-react-parser';
 
 class Projects extends Component {
     render() {
+        console.log(this.props.projects);
         const formatDate = function (d) {
-            if (d === "Present") {
-                return "Present"
-            } else if (d === null || d === undefined) {
+            if (d === null || d === undefined) {
                 return ""
             }
-            return new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long' }).format(d);
+            else {
+                return d;
+            }
+            // return new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long' }).format(d);
         }
         const formatExperience = (exp) => {
             const link = exp.link ? (<h6><a href={exp.link}>{exp.link}</a></h6>) : (<></>)
