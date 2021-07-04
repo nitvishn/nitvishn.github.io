@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import parse from 'html-react-parser';
+import Institutions from "./InstitutionComponent";
 
 class Education extends Component {
     render() {
@@ -54,18 +55,23 @@ class Education extends Component {
 
         return (
             <>
-                <h1 className="text-center">Education</h1>
+                <h1 class="text-center">Education</h1>
                 <hr></hr>
                 <br></br>
-                <h3>University of Toronto</h3>
-                <h3>The International School Bangalore</h3>
-                <h3>Online Courses</h3>
+                <div className="row">
+                    <Institutions />
+                </div>
+                <div className="row">
+                    <h3>Online Courses</h3>
+                </div>
                 <hr></hr>
                 <br></br>
                 <div className="row justify-content-center">
                     {courses}
                 </div>
-                <h3>Online Specialisations</h3>
+                <div className="row">
+                    <h3>Online Specialisations</h3>
+                </div>
                 <hr></hr>
                 <br></br>
                 <div className="row">
