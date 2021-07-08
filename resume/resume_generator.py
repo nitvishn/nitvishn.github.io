@@ -9,9 +9,12 @@ def loadData(filename):
 
 t = Template(open("resume_template.tex", "r").read())
 
-research = loadData('projects.json')
+research = loadData('research.json')
+work = loadData('work.json')
+projects = loadData('projects.json')
+print(projects)
 
-txt = t.render(something="Yes", research=research)
-print(txt)
+txt = t.render(something="Yes", research=research, work=work, projects=projects)
 open("resume.tex", "w").write(txt)
-os.system("pdflatex resume.tex")
+os.system("pdflatex resume.tex >/dev/null")
+print("Rendered PDF.")

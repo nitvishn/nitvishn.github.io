@@ -1,4 +1,4 @@
-export const WORK = [
+const WORK = [
     {
         name: 'Sigmoid Labs (now acquired by Google)',
         position: 'Research Internship',
@@ -7,3 +7,6 @@ export const WORK = [
         end: "July 20 2018"
     }
 ]
+
+let jsonFile = require('jsonfile');
+jsonFile.writeFile('work.json', JSON.stringify(WORK));

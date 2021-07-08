@@ -20,7 +20,9 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+
 \documentclass{resume} % Use the custom resume.cls style
+\nonstopmode
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
@@ -47,44 +49,46 @@ International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+%	RESEARCH EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Research Experience}
 
-\begin{rSubsection}{Research Paper: "A Monte-Carlo analysis of competitive balance and reliability across tournament structures"}{July 2020 - September 2020}{Sole Author}
-\item Pursued targeted research with  mentor Dr Tim Chartier of Davidson College. After five weeks of learning ranking methods, I used Monte-Carlo simulation, Elo+Colley methods, invented metrics, and produced a theoretical research paper that has a significant impact on Dr Chartier's other independently conducted work. Published at SIAM and presented @ MSAM
+{% for item in research %}
+
+\begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
+\item {{ item.description }}
 
 \end{rSubsection}
 
-%------------------------------------------------
-
-\begin{rSubsection}{Vita Group}{August - October 2018}{Sales Consultant}{Penrith, NSW}
-\item My responsibility was to provide a personalised service and advice to uncover customers' needs and provide them with solutions
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{Telstra}{January - July 2018}{Sales Consultant}{Market St. Sydney}
-\item My responsibility is to share my knowledge about the products and services  offered by Telstra. 
-\end{rSubsection}
-%------------------------------------------------
-
-\begin{rSubsection}{Tiffany and Co.}{October 2017 - January 2018}{Sales Consultant}{Bondi Junction, Bondi}
-\item My responsibility was to provide the Tiffany Blue experience to customers, assist customers in finding the styles that would suit them and resolve their queries in empathetic manner.
-
-\end{rSubsection}
-%------------------------------------------------
-
-\begin{rSubsection}{Royal North Shore Hospital}{2015-2016}{Assistant Nurse}{St Leonards}
-\item My responsibility was to assist the nurses in attending the needs of the patients. 
-
-\end{rSubsection}
+{% endfor %}
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{Work Experience}
+{% for item in work %}
+
+\begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
+\item {{ item.description }}
+
+\end{rSubsection}
+
+{% endfor %}
+\end{rSection}
+
+
+\begin{rSection}{Projects}
+{% for item in projects %}
+
+\begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
+\item {{ item.description }}
+
+\end{rSubsection}
+
+{% endfor %}
+\end{rSection}
+
 
 \begin{rSection}{Technical Strengths}
 

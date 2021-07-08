@@ -1,4 +1,4 @@
-export const RESEARCH = [
+const RESEARCH = [
     {
         name: 'A Monte-Carlo analysis of competitive balance and reliability across tournament structures',
         position: 'Research Paper',
@@ -54,3 +54,6 @@ export const RESEARCH = [
         end: "March 2019"
     },
 ]
+
+let jsonFile = require('jsonfile');
+jsonFile.writeFile('research.json', JSON.stringify(RESEARCH));

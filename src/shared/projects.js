@@ -1,4 +1,4 @@
-const PROJECTS = [
+export const PROJECTS = [
     {
         type: 'project',
         name: 'Pentalink',
@@ -150,7 +150,3 @@ const PROJECTS = [
         start: "July 2020",
     },
 ]
-
-
-let jsonFile = require('jsonfile');
-jsonFile.writeFile('projects.json', JSON.stringify(PROJECTS));
