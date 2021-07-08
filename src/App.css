@@ -37,3 +37,17 @@ a:visited {
 a:hover {
   color: coral;
 }
+
+.card-header{
+  background:rgb(243, 252, 255);
+  margin: 0px;
+  transition: 0.3s;
+}
+
+.card{
+  transition: 0.3s;
+}
+
+.card-header:hover{
+  background: rgb(219, 246, 255);
+}
