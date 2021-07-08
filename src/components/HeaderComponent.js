@@ -35,7 +35,6 @@ class Header extends Component {
                             <NavLink className="nav-link px-3" to="/organisations">Organisations</NavLink>
                             <NavLink className="nav-link px-3" to="/education">Education</NavLink>
                             <NavLink className="nav-link px-3" to="/resume">Resume</NavLink>
-                            <NavLink className="nav-link px-3" to="/blog">Blog</NavLink>
                         </div>
                     </Collapse>
                 </div>

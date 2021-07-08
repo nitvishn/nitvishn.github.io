@@ -26,10 +26,16 @@ class Experience extends Component {
                         <h5>{formatDate(exp.start)} {exp.end ? <span>&#8212;</span> : ""} {formatDate(exp.end)}</h5>
                     </div>
                     <div className="row">
+                        {exp.volumelink ? (<a href={exp.volumelink}><h5>Link to volume</h5></a>) : <div></div>}
+                    </div>
+                    <div className="row">
                         {link}
                     </div>
                     <div className="row">
                         <p>{parse(exp.description)}</p>
+                    </div>
+                    <div className="row">
+                        {exp.abstract ? <p><strong>Abstract: </strong>{exp.abstract} </p> : <div></div>}
                     </div>
                 </>
             )

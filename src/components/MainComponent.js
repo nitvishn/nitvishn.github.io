@@ -65,7 +65,7 @@ class Main extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col"></div>
-                        <div className="col-12">
+                        <div className="col-12 col-md-11 col-lg-10 col-xl-9">
                             <br></br>
                             <Switch>
                                 <Route path="/home" component={Home}></Route>

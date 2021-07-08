@@ -1,12 +1,12 @@
 import React from 'react';
-import { Accordion, Card, Button } from 'react-bootstrap';
+import { Accordion, Card } from 'react-bootstrap';
 
 function Institutions() {
     return (
         <>
-            <h3>Institutions</h3>
+            {/* <h3>Institutions</h3>
             <hr></hr>
-            <br></br>
+            <br></br> */}
             <div className='col'></div>
             <div className="col-12">
                 <div className="col-12">
@@ -25,7 +25,7 @@ function Institutions() {
                     I studied in the the International Baccalaureate (IB) Diploma Programme in years 11 and 12, and for Cambdridge IGCSE in years 9 and 10. My subjects and final grades in either programme are listed below.
                     <div className="row">
                         <div className="col"></div>
-                        <Accordion className="col-12 col-md-12 col-lg-11">
+                        <Accordion className="col-12 col-md-12 col-lg-11 mt-3 mb-3" defaultActiveKey="0">
                             <Card>
                                 <Accordion.Toggle as={Card.Header} eventKey="0">
                                     <center>

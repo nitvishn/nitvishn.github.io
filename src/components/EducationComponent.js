@@ -5,12 +5,13 @@ import Institutions from "./InstitutionComponent";
 class Education extends Component {
     render() {
         const formatDate = function (d) {
-            if (d === "Present") {
-                return "Present"
-            } else if (d === null || d === undefined) {
+            if (d === null || d === undefined) {
                 return ""
             }
-            return new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long' }).format(d);
+            else {
+                return d;
+            }
+            // return new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long' }).format(d);
         }
         const courses = this.props.courses.map((course) => {
             return (
