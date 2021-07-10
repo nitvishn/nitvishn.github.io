@@ -45,7 +45,6 @@ class Projects extends Component {
 
         return (
             <>
-
                 <h1 className="text-center">Projects</h1>
                 <hr></hr>
                 <br></br>
@@ -55,7 +54,7 @@ class Projects extends Component {
 
                 <br></br>
                 <br></br>
-                <h2 className="text-center">Programming and Interesting Miscellaneous Fun <span>&#8482;</span></h2>
+                <h2 className="text-center" id="fun">Programming and Interesting Miscellaneous Fun <span>&#8482;</span></h2>
                 <hr></hr>
                 <br></br>
                 <div className="row justify-content-center">

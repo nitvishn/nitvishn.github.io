@@ -10,6 +10,7 @@ import Canvas from "./p5Component";
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Education from "./EducationComponent";
+import { Talks } from "./TalksComponent";
 
 const mapStateToProps = state => {
     return {
@@ -19,6 +20,7 @@ const mapStateToProps = state => {
         organisations: state.organisations,
         courses: state.courses,
         specs: state.specs,
+        talks: state.talks
     }
 }
 
@@ -57,6 +59,12 @@ class Main extends Component {
             )
         }
 
+        const SetupTalks = () => {
+            return (
+                <Talks talks={this.props.talks}></Talks>
+            )
+        }
+
         return (
             <>
                 <Canvas />
@@ -74,6 +82,7 @@ class Main extends Component {
                                 <Route path="/projects" component={SetupProjects}></Route>
                                 <Route path="/organisations" component={SetupOrganisations}></Route>
                                 <Route path="/education" component={SetupEducation}></Route>
+                                <Route path="/talks" component={SetupTalks}></Route>
                                 <Redirect to="/home" />
                             </Switch>
                         </div>
