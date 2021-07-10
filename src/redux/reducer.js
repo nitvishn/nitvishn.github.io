@@ -1,8 +1,8 @@
-import { WORK } from '../shared/work';
-import { PROJECTS } from '../shared/projects';
-import { ORGANISATIONS } from '../shared/organisations';
-import { COURSES, SPECIALISATIONS } from '../shared/courses';
-import { RESEARCH } from '../shared/research';
+import WORK from '../shared/work';
+import PROJECTS from '../shared/projects';
+import ORGANISATIONS from '../shared/organisations';
+import {COURSES, SPECIALISATIONS } from '../shared/courses';
+import RESEARCH from '../shared/research';
 
 export const initialState = {
     work: WORK,

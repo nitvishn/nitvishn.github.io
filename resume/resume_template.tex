@@ -27,7 +27,7 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \name{Vishnu Nittoor} % Your name
-\address{+91 7975322206 \\ nitvishn.github.io \\ nitvishn@gmail.com} % Your phone number and email
+\address{+91 7975322206 \\ nitvishn.net \\ nitvishn@gmail.com} % Your phone number and email
 
 \begin{document}
 
@@ -80,6 +80,16 @@ International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
 
 \begin{rSection}{Projects}
 {% for item in projects %}
+{% if item.type == 'project' %}
+\begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
+\item {{ item.description }}
+\end{rSubsection}
+{% endif %}
+{% endfor %}
+\end{rSection}
+
+\begin{rSection}{Organisations}
+{% for item in organisations %}
 
 \begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
 \item {{ item.description }}
@@ -88,54 +98,6 @@ International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
 
 {% endfor %}
 \end{rSection}
-
-
-\begin{rSection}{Technical Strengths}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Wireframe & Microsoft Powerpoint \\
-Creating a prototype & Invision\\
-Visual Design & Paint 3D, Adobe Photoshop, Canva \\
-Machine Learning &  Python with Numpy and Pandas \\
-Website (coded) &  HTML5 and CSS \\
-Data Visualisation & Tableau\\
-Typesetting Document & Latex\\
-Programming & Java and Java Script, Python, HTML and CSS\\
-
-\end{tabular}
-
-\end{rSection}
-
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%	Volunteering Activities and Projects
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Volunteering Activities}
-
-\begin{rSubsection}{CoderDojo}{2018-Present}{Champion}{Microsoft Store Sydney and Parramatta}
-\item I was responsible for mentoring young people with programming. I facilitate their learning activity by demonstrating the content to cover and assisting them in developing their own small projects or chosen activity. I am also for marketing and liaising with stakeholders who are interested in partnering with CoderDojo.   
-
-\end{rSubsection}
-%------------------------------------------------
-
-\begin{rSubsection}{Sydney University}{2013-2014}{Student Representative}{Campberdown,NSW}
-\item I gathered information from students and communicate their views to the faculty members. I did this to improve the learning experience of current and future students.
-
-\end{rSubsection}
-%------------------------------------------------
-
-\begin{rSubsection}{Aiesec Poland}{November 2013- February 2014}{Intern}{Poznan, Poland}
-\item I taught English to Polish Kindergartens and assisted the organisation in promoting Global Host Family and diversity to Polish students. 
-
-\end{rSubsection}
-
-\end{rSection}
-
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Awards and Recognitions}
 
