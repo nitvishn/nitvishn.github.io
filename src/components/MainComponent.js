@@ -10,14 +10,17 @@ import Canvas from "./p5Component";
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Education from "./EducationComponent";
+import { Talks } from "./TalksComponent";
 
 const mapStateToProps = state => {
     return {
         work: state.work,
+        research: state.research,
         projects: state.projects,
         organisations: state.organisations,
         courses: state.courses,
         specs: state.specs,
+        talks: state.talks
     }
 }
 
@@ -29,6 +32,12 @@ class Main extends Component {
         const SetupWork = () => {
             return (
                 <Experience title="Work Experience" work={this.props.work}></Experience>
+            )
+        }
+
+        const SetupResearchAndWork = () => {
+            return (
+                <Experience title="Research and Work Experience" work={this.props.research.concat(this.props.work)}></Experience>
             )
         }
 
@@ -50,6 +59,12 @@ class Main extends Component {
             )
         }
 
+        const SetupTalks = () => {
+            return (
+                <Talks talks={this.props.talks}></Talks>
+            )
+        }
+
         return (
             <>
                 <Canvas />
@@ -58,14 +73,16 @@ class Main extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col"></div>
-                        <div className="col-12 col-sm-10 col-md-8">
+                        <div className="col-12 col-md-11 col-lg-10 col-xl-9">
                             <br></br>
                             <Switch>
                                 <Route path="/home" component={Home}></Route>
-                                <Route path="/work" component={SetupWork}></Route>
+                                <Route path="/research" component={SetupResearchAndWork}></Route>
+                                <Redirect from="/work" to="/research" />
                                 <Route path="/projects" component={SetupProjects}></Route>
                                 <Route path="/organisations" component={SetupOrganisations}></Route>
                                 <Route path="/education" component={SetupEducation}></Route>
+                                <Route path="/talks" component={SetupTalks}></Route>
                                 <Redirect to="/home" />
                             </Switch>
                         </div>
