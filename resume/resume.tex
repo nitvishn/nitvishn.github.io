@@ -25,9 +25,17 @@
 \nonstopmode
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Vishnu Nittoor | Resume},
+    }
 
 \name{Vishnu Nittoor} % Your name
-\address{+91 7975322206 \\ nitvishn.net \\ nitvishn@gmail.com} % Your phone number and email
+\address{+91 7975322206 \\ \href{ https://nitvishn-website.netlify.app/ }{ https://nitvishn-website.netlify.app/ } \\ nitvishn@gmail.com} % Your phone number and email
 
 \begin{document}
 
@@ -35,7 +43,7 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Education}
+\begin{rSection}{\href{google.com}{Education}}
 
 {\bf University of Toronto} \hfill {\em 2021-2025} \\ 
 Honours Bachelor of Science, incoming freshman \\
@@ -45,6 +53,10 @@ Expected graduation: 2025  \\
 {\bf The International School Bangalore} \hfill {\em 2015-2021} \\ 
 International Baccalaureate Diploma, \textbf{Score: 44/45}  \\
 International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
+
+{\bf \href{https://nitvishn-website.netlify.app/education}{20+ College-Level Online Courses}} \hfill{\em 2015 - Present}\\
+Computer Science, Mathematics, Physics, Philosophy  \\
+Courses exclusively on edX.org and Coursera\\
 
 \end{rSection}
 
@@ -57,7 +69,7 @@ International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
 
 
 \begin{rSubsection}{ A Monte-Carlo analysis of competitive balance and reliability across tournament structures }{ July 2020 - September 2020 }{}
-\item  This summer, I had the privilege of working with Prof. Tim Chartier as part of the Pioneer Research Program in the mathematics of ranking. After a 10-week program learning ranking methods, I produced a highly theoretical research paper on a Monte-Carlo analysis of competitive balance and reliability across tournament structures. The paper has impacted Prof Chartier's independently conducted work and opens up several additional questions regarding ranking and tournament structures. This paper has been published in SIAM Undergraduate Research Online and has been presented at a talk at the Midwest Sports Analytics Meeting. The link for the talk can be found on the Talks/Videos section of my website. 
+\item This summer, I had the privilege of working with Prof. Tim Chartier as part of the Pioneer Research Program in the mathematics of ranking. After a 10-week program learning ranking methods, I produced a highly theoretical research paper on a Monte-Carlo analysis of competitive balance and reliability across tournament structures. The paper has impacted Prof Chartier's independently conducted work and opens up several additional questions regarding ranking and tournament structures. This paper has been published in SIAM Undergraduate Research Online and has been presented at a talk at the Midwest Sports Analytics Meeting. The link for the talk can be found on the Talks/Videos section of my website. 
 
 \end{rSubsection}
 
@@ -77,7 +89,7 @@ International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
 
 
 \begin{rSubsection}{ Sigmoid Labs (now acquired by Google) }{ June 1 2018 - July 20 2018 }{}
-\item I interned at Sigmoid Labs (now acquired by Google) in the summer of 2018. Their product, whereismytrain, is a popular Android app used by tens of millions of people in India. While working there, my colleagues had an unsolved problem related to train crossing detection on their hands. \n Interested in solving it, I worked closely with the CEO, Dr Sashikumar Venkatraman and another engineer in developing an iterative algorithm of my own. I also developed an accelerated visual animation of trains’ locations to aid research. After refining my algorithm multiple times, I generated data that made significant progress on a solution which was widely appreciated. I look forward to working in an intensely collaborative and creative environment like this again.
+\item I interned at Sigmoid Labs (now acquired by Google) in the summer of 2018. Their product, whereismytrain, is a popular Android app used by tens of millions of people in India. While working there, my colleagues had an unsolved problem related to train crossing detection on their hands. Interested in solving it, I worked closely with the CEO, Dr Sashikumar Venkatraman and another engineer in developing an iterative algorithm of my own. I also developed an accelerated visual animation of trains’ locations to aid research. After refining my algorithm multiple times, I generated data that made significant progress on a solution which was widely appreciated. I look forward to working in an intensely collaborative and creative environment like this again.
 
 \end{rSubsection}
 
@@ -95,10 +107,8 @@ International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
 
 
 \begin{rSubsection}{ Project Euler }{ January 2017 - None }{}
-\item Solved over 109 problems on Project Euler, programming my own solutions and creating a Python3 library for computatational number theory algorithms. Researched topics in mathematics and computer science in the process. Made all solutions as well as the library open-source on my GitHub page - the library is named 'addmath.py', reminiscently after the IGCSE Additional Mathematics course I wrote exams for in Grade 10. I also earned the top 1% badge on the platform. Members of the website who solve more than 109 problems fall in the top 1% of problem solvers, earning the award as a badge. The answers are integer solutions to mathematics problems which require skills in programming and algorithms to solve. I also created a Discord bot that serves as a wrapper for the library for access within text channels on Discord servers.
+\item Solved over 109 problems on Project Euler, programming my own solutions and creating a Python3 library for computatational number theory algorithms. Researched topics in mathematics and computer science in the process. Made all solutions as well as the library open-source on my GitHub page - the library is named 'addmath.py', reminiscently after the IGCSE Additional Mathematics course I wrote exams for in Grade 10. I also earned the top 1\% badge on the platform. Members of the website who solve more than 109 problems fall in the top 1\% of problem solvers, earning the award as a badge. The answers are integer solutions to mathematics problems which require skills in programming and algorithms to solve. I also created a Discord bot that serves as a wrapper for the library for access within text channels on Discord servers.
 \end{rSubsection}
-
-
 
 
 
@@ -139,27 +149,29 @@ International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
 
 
 
+
+
 \end{rSection}
 
 \begin{rSection}{Organisations}
 
 
 \begin{rSubsection}{ Project Neumann }{ April 2018 - Present }{}
-\item \n            Project Neumann is an informal organisation which is an evolution of the Computational Thinking Club. It is a more extensive intercollegiate initiative partly comprised of the same organising members as the club. The members meet multiple times a week to work on projects, discuss and conduct research, and collectively direct our explorations of computer science and mathematics. In the future, we plan to provide a platform for educating high schoolers in college-level computer science concepts and a network of undergraduate researchers with whom they may undertake projects.\n        
+\item Project Neumann is an informal organisation which is an evolution of the Computational Thinking Club. It is a more extensive intercollegiate initiative partly comprised of the same organising members as the club. The members meet multiple times a week to work on projects, discuss and conduct research, and collectively direct our explorations of computer science and mathematics. In the future, we plan to provide a platform for educating high schoolers in college-level computer science concepts and a network of undergraduate researchers with whom they may undertake projects.
 
 \end{rSubsection}
 
 
 
 \begin{rSubsection}{ Blitz Notes }{ April 2018 - Present }{}
-\item \n        \n        In 10th grade, I received requests from my peers  to send them my notes from an English language seminar. Instead of responding individually, I scraped 150 email addresses from the school directory, set up a GitHub Pages repository with the file on it, created a rudimentary website, and sent it to everybody on a grade-wide email chain.\n        This was the first time anyone had begun an intra-grade conversation on this level. Soon, the chain blossomed into activity, and others began to contribute en masse.\n        A few months later, my friend Rishi and I then decided to design my own notes sharing repository, Blitz Notes.\n        While Rishi worked on the front-end, I built a back-end server and programmed an automatic integration with a notes editor. Together, we designed an easy-to-use workflow for writing and publishing notes. After a month’s programming and debugging, Blitz Notes, upon release in February 2020, quickly evolved into a massive undertaking. We assigned subject leads and assembled a team of over 30 people in creating up-to-date notes. We are a well-known IB/IGCSE resource. As of July 3rd 2021, we had <strong>143,093 pageviews</strong> from <strong>39,928 regular users</strong> across <strong>148 countries</strong>. We have over <strong>350 webpages</strong> of notes within the site.\n        
+\item In 10th grade, I received requests from my peers  to send them my notes from an English language seminar. Instead of responding individually, I scraped 150 email addresses from the school directory, set up a GitHub Pages repository with the file on it, created a rudimentary website, and sent it to everybody on a grade-wide email chain.      This was the first time anyone had begun an intra-grade conversation on this level. Soon, the chain blossomed into activity, and others began to contribute en masse.      A few months later, my friend Rishi and I then decided to design my own notes sharing repository, Blitz Notes.      While Rishi worked on the front-end, I built a back-end server and programmed an automatic integration with a notes editor. Together, we designed an easy-to-use workflow for writing and publishing notes. After a month’s programming and debugging, Blitz Notes, upon release in February 2020, quickly evolved into a massive undertaking. We assigned subject leads and assembled a team of over 30 people in creating up-to-date notes. We are a well-known IB/IGCSE resource. As of July 3rd 2021, we had 143,093 pageviews from 39,928 regular users across 148 countries. We have over 350 webpages of notes within the site.      
 
 \end{rSubsection}
 
 
 
 \begin{rSubsection}{ Computational Thinking Club }{ August 2019 - March 2021 }{}
-\item With a team of 5 organisers, I helped brainstorm and devise a rigorous curriculum in mathematics and computer science, holding weekly lessons. I led the team in teaching programming and algorithms to 30+ members from grades 7-12. We also ran an online, open-source data science course, teaching skills in data visualization and analysis using programming to IB and IGCSE students. All the material for the course is available on BlitzNotes in the attached link. \n        
+\item With a team of 5 organisers, I helped brainstorm and devise a rigorous curriculum in mathematics and computer science, holding weekly lessons. I led the team in teaching programming and algorithms to 30+ members from grades 7-12. We also ran an online, open-source data science course, teaching skills in data visualization and analysis using programming to IB and IGCSE students. All the material for the course is available on BlitzNotes in the attached link.       
 
 \end{rSubsection}
 

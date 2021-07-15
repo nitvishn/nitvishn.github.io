@@ -2,6 +2,7 @@
 import lxml.html # http://lxml.de/lxmlhtml.html
 from lxml import etree
 from io import StringIO, BytesIO
+import re
 
 def html2latex(el): # fill in this function to catch and convert html tags
     result = []
@@ -32,6 +33,7 @@ def html2latex(el): # fill in this function to catch and convert html tags
 
 def string2latex(html):
     # must be unicode or lxml parse crashes
+    html = re.sub('%', '\%', html)
     parser = etree.HTMLParser()
     tree   = etree.parse(StringIO(html), parser) # expects a file, use StringIO for string
     root = tree.getroot()
