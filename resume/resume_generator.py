@@ -14,11 +14,14 @@ research = loadData('research.json')
 work = loadData('work.json')
 projects = loadData('projects.json')
 organisations = loadData('organisations.json')
-for key in projects:
-    projects[key] = html2latex.string2Latex(projects[key])
-print(projects)
+for L in [research, work, projects, organisations]:
+    for i,item in enumerate(L):
+        for key in item:
+            if item[key] and (key=='description' or key=='shortdescription'):
+                L[i][key] = html2latex.string2latex(item[key])
+base_url = "https://nitvishn-website.netlify.app/"
 
-txt = t.render(something="Yes", research=research, work=work, projects=projects, organisations=organisations)
+txt = t.render(something="Yes", research=research, work=work, projects=projects, organisations=organisations, base_url=base_url)
 open("resume.tex", "w").write(txt)
 os.system("pdflatex resume.tex >/dev/null")
 print("Rendered PDF.")
