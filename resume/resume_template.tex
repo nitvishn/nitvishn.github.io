@@ -43,7 +43,10 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\href{google.com}{Education}}
+\begin{rSection}{}{Interests}}
+\end{rSection}
+
+\begin{rSection}{\href{ {{base_url}}#/education }{Education}}
 
 {\bf University of Toronto} \hfill {\em 2021-2025} \\ 
 Honours Bachelor of Science, incoming freshman \\
@@ -54,7 +57,7 @@ Expected graduation: 2025  \\
 International Baccalaureate Diploma, \textbf{Score: 44/45}  \\
 International General Certificate of Secondary Education, \textbf{8A*, 1A}\\
 
-{\bf \href{https://nitvishn-website.netlify.app/education}{20+ College-Level Online Courses}} \hfill{\em 2015 - Present}\\
+{\bf \href{ {{base_url}}#/education }{20+ College-Level Online Courses}} \hfill{\em 2015 - Present}\\
 Computer Science, Mathematics, Physics, Philosophy  \\
 Courses exclusively on edX.org and Coursera\\
 
@@ -64,21 +67,26 @@ Courses exclusively on edX.org and Coursera\\
 %	RESEARCH EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Research Experience}
+\begin{rSection}{\href{ {{base_url}}#/research }{Research}}
 
 {% for item in research %}
 
-\begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
-\item {{ item.description }}
+    {% if 'link' in item %}
+    \begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
+    {% else%}
+    \begin{rSubsection}{ \href{ {{item.link}} }{ {{item.name}} } }{ {{item.start}} - {{item.end}} }{}
+    {% endif %}
 
-\end{rSubsection}
+    \item {{ item.description }}
+
+    \end{rSubsection}
 
 {% endfor %}
 \end{rSection}
 
 
 
-\begin{rSection}{Work Experience}
+\begin{rSection}{\href{ {{base_url}}#/research }{Work}}
 {% for item in work %}
 
 \begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
@@ -90,17 +98,21 @@ Courses exclusively on edX.org and Coursera\\
 \end{rSection}
 
 
-\begin{rSection}{Projects}
+\begin{rSection}{\href{ {{base_url}}#/projects }{Projects}}
 {% for item in projects %}
 {% if item.type == 'project' %}
+{% if 'link' in item %}
 \begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
+    {% else%}
+    \begin{rSubsection}{ \href{ {{item.link}} }{ {{item.name}} } }{ {{item.start}} - {{item.end}} }{}
+    {% endif %}
 \item {{ item.description }}
 \end{rSubsection}
 {% endif %}
 {% endfor %}
 \end{rSection}
 
-\begin{rSection}{Organisations}
+\begin{rSection}{\href{ {{base_url}}#/organisations }{Organisations}}
 {% for item in organisations %}
 
 \begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
@@ -114,9 +126,8 @@ Courses exclusively on edX.org and Coursera\\
 \begin{rSection}{Awards and Recognitions}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Techfugees Hackathon (2018) &  Our team (Elevate) won Second Place. \\
-Sydney University & Advertised Bursary (2018),NSW Health Grant (2017), Robert Maple Brown (2013)\\
-Macquarie University (2013) & Overall Excellence in Science\\
+Indian National Olympiad in Informatics (2020) &  National Round Qualifier \\
+Project Euler (2019) & Top 1\% Award \\
 \end{tabular}
 
 \end{rSection}

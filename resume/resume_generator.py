@@ -5,7 +5,7 @@ import json
 import html2latex
 
 def loadData(filename):
-    with open('../src/shared/' + filename, 'r') as file:
+    with open('../src/shared/' + filename, 'r', encoding="utf8") as file:
         return json.load(file)
 
 t = Template(open("resume_template.tex", "r").read())
@@ -19,9 +19,9 @@ for L in [research, work, projects, organisations]:
         for key in item:
             if item[key] and (key=='description' or key=='shortdescription'):
                 L[i][key] = html2latex.string2latex(item[key])
-base_url = "https://nitvishn-website.netlify.app/"
+base_url = "https://nitvishn.net/"
 
 txt = t.render(something="Yes", research=research, work=work, projects=projects, organisations=organisations, base_url=base_url)
 open("resume.tex", "w").write(txt)
-os.system("pdflatex resume.tex >/dev/null")
+os.system("pdflatex resume.tex >nul 2>&1")
 print("Rendered PDF.")

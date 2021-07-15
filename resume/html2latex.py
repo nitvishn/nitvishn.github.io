@@ -38,4 +38,5 @@ def string2latex(html):
     tree   = etree.parse(StringIO(html), parser) # expects a file, use StringIO for string
     root = tree.getroot()
     latex = html2latex(root)
+    # latex = re.sub('###', '#', latex)
     return latex
