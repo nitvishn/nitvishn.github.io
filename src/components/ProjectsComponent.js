@@ -44,7 +44,7 @@ class Projects extends Component {
         const programmingfun = this.props.projects.filter((exp) => { return exp.type !== "project" }).map(formatExperience)
 
         return (
-            <>
+            <div className="container">
                 <h1 className="text-center">Projects</h1>
                 <hr></hr>
                 <br></br>
@@ -60,7 +60,7 @@ class Projects extends Component {
                 <div className="row justify-content-center">
                     {programmingfun}
                 </div>
-            </>
+            </div>
         );
     }
 }

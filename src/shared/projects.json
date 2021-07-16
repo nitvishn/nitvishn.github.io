@@ -38,16 +38,16 @@
     },
     {
         "type": "programming",
-        "name": "Pong, but the paddles move in 2 dimensions",
+        "name": "Pong, but the paddles move in two dimensions",
         "link": "https://github.com/nitvishn/pong/",
-        "description": "It's local multiplayer pong, but you can use WASD and arrow keys to move each paddle around in two dimensions. They also teleport when they cross boundaries. It's a very simple change to a classic game, but tt's really, really fun. We played it a lot in dorm, and I was most definitely the best. Probably because I spent so many hours iteratively programming the game, testing it, challenging my friends to duels, losing, and then tweaking the code so that I had an edge the next time. Fun. Interesting.",
+        "description": "It's local multiplayer pong, but you can use WASD and arrow keys to move each paddle around in two dimensions. They also teleport when they cross boundaries. It's a very simple change to a classic game, but it's really, really fun. We played it a lot in dorm, and I was most definitely the best. Probably because I spent so many hours iteratively programming the game, testing it, challenging my friends to duels, losing, and then tweaking the code so that I had an edge the next time. Fun. Interesting.",
         "start": "August 2019"
     },
     {
         "type": "programming",
         "name": "Connect 4 Bot",
         "link": "https://connect4-nitvishn.herokuapp.com/",
-        "description": "I mean, it's a bot that plays connect4. Self-explanatory. This was during a really intense connect4 craze at our school - everyone was playing connect4 on paper notebooks in between and during classes. There was a very clear dominance heirarchy, and although I wasn't terrible, I wasn't at the top. This bot was. Consistently. So good luck :)",
+        "description": "I mean, it's a bot that plays connect4. Self-explanatory. This was during a really intense connect4 craze at our school - everyone was playing connect4 on paper notebooks in between and during classes. There was a very clear dominance hierarchy, and although I wasn't terrible, I wasn't at the top. This bot was. Consistently. So good luck :)",
         "start": "April 2017"
     },
     {
@@ -110,7 +110,7 @@
         "type": "fun",
         "name": "Two Player Snake",
         "link": "https://nitvishn.github.io/Snake2p/",
-        "description": "The Snake game, but now with two players. God, I have so many more of these, but I think this one is the most charismatic. It's very buggy - when we used to play this in my school dormitory at night, the person who was longest when the game crashed due to a bug was declared as the winner. No intentional time limit, just an unintended, unforseeen, inevitable in-game failure. WASD and arrow keys. Half your mass gets re-distributed into the board when you collide either into yourself or your opponent. ",
+        "description": "The Snake game, but now with two players. God, I have so many more of these, but I think this one is the most charismatic. It's very buggy - when we used to play this in my school dormitory at night, the person who was longest when the game crashed due to a bug was declared as the winner. No intentional time limit, just an unintended, unforeseen, inevitable in-game failure. WASD and arrow keys. Half your mass gets re-distributed into the board when you collide either into yourself or your opponent. ",
         "start": "March 2017"
     },
     {

@@ -43,10 +43,11 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{}{Interests}}
+\begin{rSection}{Interests}
+    I'm interested in theoretical computer science research, and I'd love to explore how it might intersect with mathematics, philosophy, the applied sciences, and the humanities. I'm interested in software projects that pose challenging technical problems that could evolve into research projects. I'm also interested in working on projects that solve hard problems uniquely on both technical and functional levels.
 \end{rSection}
 
-\begin{rSection}{\href{ {{base_url}}#/education }{Education}}
+\begin{rSection}{\href{ {{base_url}}\#/education }{Education}}
 
 {\bf University of Toronto} \hfill {\em 2021-2025} \\ 
 Honours Bachelor of Science, incoming freshman \\
@@ -67,26 +68,24 @@ Courses exclusively on edX.org and Coursera\\
 %	RESEARCH EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\href{ {{base_url}}#/research }{Research}}
+\begin{rSection}{\href{ {{base_url}}\#/research }{Research}}
 
 {% for item in research %}
 
-    {% if 'link' in item %}
-    \begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
-    {% else%}
-    \begin{rSubsection}{ \href{ {{item.link}} }{ {{item.name}} } }{ {{item.start}} - {{item.end}} }{}
-    {% endif %}
-
-    \item {{ item.description }}
-
-    \end{rSubsection}
+\begin{rSubsection}{ 
+    {% if 'link' in item %} \href{ {{item.link}} }{ {{item.name}} } {% else%} {{item.name}} {% endif %}
+    }{ 
+    {% if item.end %} {{item.start}} - {{item.end}} {% else%} {{item.start}} {% endif %}
+     }{ {% if item.position %} {{item.position}} {% else%}  {% endif %} }
+\item {{ item.description }}
+\end{rSubsection}
 
 {% endfor %}
 \end{rSection}
 
 
 
-\begin{rSection}{\href{ {{base_url}}#/research }{Work}}
+\begin{rSection}{\href{ {{base_url}}\#/research }{Work}}
 {% for item in work %}
 
 \begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
@@ -97,27 +96,28 @@ Courses exclusively on edX.org and Coursera\\
 {% endfor %}
 \end{rSection}
 
-
-\begin{rSection}{\href{ {{base_url}}#/projects }{Projects}}
+\begin{rSection}{\href{ {{base_url}}\#/projects }{Projects}}
 {% for item in projects %}
-{% if item.type == 'project' %}
-{% if 'link' in item %}
-\begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
-    {% else%}
-    \begin{rSubsection}{ \href{ {{item.link}} }{ {{item.name}} } }{ {{item.start}} - {{item.end}} }{}
+    {% if item.type == 'project' %}
+        \begin{rSubsection}{ 
+            {% if 'link' in item %} \href{ {{item.link}} }{ {{item.name}} } {% else%} {{item.name}} {% endif %}
+            }{ 
+            {% if item.end %} {{item.start}} - {{item.end}} {% else%} {{item.start}} {% endif %}
+             }{ {% if item.position %} {{item.position}} {% else%}  {% endif %} }
+        \item {{ item.description }}
+        \end{rSubsection}
     {% endif %}
-\item {{ item.description }}
-\end{rSubsection}
-{% endif %}
 {% endfor %}
 \end{rSection}
 
-\begin{rSection}{\href{ {{base_url}}#/organisations }{Organisations}}
+\begin{rSection}{\href{ {{base_url}}\#/organisations }{Organisations}}
 {% for item in organisations %}
-
-\begin{rSubsection}{ {{item.name}} }{ {{item.start}} - {{item.end}} }{}
+\begin{rSubsection}{ 
+    {% if 'link' in item %} \href{ {{item.link}} }{ {{item.name}} } {% else%} {{item.name}} {% endif %}
+    }{ 
+    {% if item.end %} {{item.start}} - {{item.end}} {% else%} {{item.start}} {% endif %}
+     }{ {% if item.position %} {{item.position}} {% else%}  {% endif %} }
 \item {{ item.description }}
-
 \end{rSubsection}
 
 {% endfor %}

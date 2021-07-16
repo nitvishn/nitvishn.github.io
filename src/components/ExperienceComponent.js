@@ -43,10 +43,12 @@ class Experience extends Component {
 
         return (
             <>
-                <h1 className="text-center">{this.props.title}</h1>
-                <hr></hr>
-                <br></br>
-                {work}
+                <div className="container">
+                    <h1 className="text-center">{this.props.title}</h1>
+                    <hr></hr>
+                    <br></br>
+                    {work}
+                </div>
             </>
         );
     }

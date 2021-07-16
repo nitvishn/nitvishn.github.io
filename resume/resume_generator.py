@@ -19,9 +19,10 @@ for L in [research, work, projects, organisations]:
         for key in item:
             if item[key] and (key=='description' or key=='shortdescription'):
                 L[i][key] = html2latex.string2latex(item[key])
-base_url = "https://nitvishn.net/"
+base_url = "https://www.nitvishn.net/"
 
 txt = t.render(something="Yes", research=research, work=work, projects=projects, organisations=organisations, base_url=base_url)
 open("resume.tex", "w").write(txt)
 os.system("pdflatex resume.tex >nul 2>&1")
+os.system("mv resume.pdf ../public/")
 print("Rendered PDF.")

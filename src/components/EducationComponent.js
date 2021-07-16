@@ -56,31 +56,33 @@ class Education extends Component {
 
         return (
             <>
-                <h1 class="text-center">Education</h1>
-                <hr></hr>
-                <br></br>
-                <div className="row">
-                    <Institutions />
-                </div>
-                <div className="row">
-                    <h3>Online Courses</h3>
-                </div>
-                <hr></hr>
-                <br></br>
-                <div className="row justify-content-center">
-                    {courses}
-                </div>
-                <div className="row">
-                    <h3>Online Specialisations</h3>
-                </div>
-                <hr></hr>
-                <br></br>
-                <div className="row">
-                    <div className="col"></div>
-                    <div className="col-12 col-md-11">
-                        {specs}
+                <div className="container">
+                    <h1 class="text-center">Education</h1>
+                    <hr></hr>
+                    <br></br>
+                    <div className="row">
+                        <Institutions />
                     </div>
-                    <div className="col"></div>
+                    <div className="row">
+                        <h3>Online Courses</h3>
+                    </div>
+                    <hr></hr>
+                    <br></br>
+                    <div className="row justify-content-center">
+                        {courses}
+                    </div>
+                    <div className="row">
+                        <h3>Online Specialisations</h3>
+                    </div>
+                    <hr></hr>
+                    <br></br>
+                    <div className="row">
+                        <div className="col"></div>
+                        <div className="col-12 col-md-11">
+                            {specs}
+                        </div>
+                        <div className="col"></div>
+                    </div>
                 </div>
             </>
         );
