@@ -2,6 +2,16 @@ import React, { Component } from "react";
 import { Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom'
 
+import { useState, useEffect } from 'react';
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -14,9 +24,12 @@ class Header extends Component {
     }
 
     toggleNav() {
-        this.setState({
-            isNavOpen: !this.state.isNavOpen
-        });
+        const {width, height} = getWindowDimensions();
+        if(width<=990){
+            this.setState({
+                isNavOpen: !this.state.isNavOpen
+            });
+        }
     }
 
     render() {
