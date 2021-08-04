@@ -85,9 +85,13 @@ export const SPECIALISATIONS = [
             },
             {
                 name: "Front-End Web Development with React",
+                link: "https://www.coursera.org/account/accomplishments/certificate/LZSXY8VFL7S4",
+                date: "July 2021"
             },
             {
                 name: "Server-side Development with NodeJS, Express and MongoDB",
+                link: "https://coursera.org/share/efd9135f10b8a43645b3be7d1b5ed0ed",
+                date: "August 2021"
             },
         ]
     },
