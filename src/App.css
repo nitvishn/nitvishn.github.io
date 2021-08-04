@@ -51,3 +51,11 @@ a:hover {
 .card-header:hover{
   background: rgb(219, 246, 255);
 }
+
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
