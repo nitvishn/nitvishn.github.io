@@ -76,6 +76,7 @@ export const SPECIALISATIONS = [
     {
         name: "Full-Stack Web Development With React",
         institution: "Hong Kong University of Science and Technology",
+        link: "https://www.coursera.org/account/accomplishments/specialization/certificate/C9GSDGVLBKER",
         platform: "Coursera",
         courses: [
             {
