@@ -37,6 +37,13 @@
         "start": "January 2018"
     },
     {
+      "type": "programming",
+      "name": "QueueBot",
+      "link": "https://discord.com/api/oauth2/authorize?client_id=865619661840056351&permissions=8&scope=bot",
+      "description": "QueueBot is the easiest way to create queues for asking questions during office hours. Although it was designed with questions in mind, it can be used in a variety of contexts involving queues of people or objects. QueueBot binds a queue to the channel in which it is invoked, and allows users to specify the number of questions as well as an optional comment.<br/><br/>Users can be 'popped' from the queue in a first-in-first-out basis, and can ask a maximum of 3 questions per queue entry. The bot lists past queued entries, the currently active person, and a list of the next people in queue. It calculates a rough ETA for when each entry will be 'popped'.",
+      "start": "August 2019"
+    },
+    {
         "type": "programming",
         "name": "Pong, but the paddles move in two dimensions",
         "link": "https://github.com/nitvishn/pong/",
