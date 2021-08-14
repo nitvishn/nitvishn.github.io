@@ -85,7 +85,7 @@ function Institutions() {
                                 <Accordion.Toggle as={Card.Header} eventKey="1">
                                     <center>
                                         <h5>Cambridge IGCSE</h5>
-                                        <h6>August 2019 <span>&#8212;</span> May 2021 </h6>
+                                        <h6>August 2017 <span>&#8212;</span> May 2019 </h6>
                                     </center>
                                 </Accordion.Toggle>
                                 <Accordion.Collapse eventKey="1">
