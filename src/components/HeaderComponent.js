@@ -2,8 +2,6 @@ import React, { Component, useState, useEffect } from "react";
 import { Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom'
 
-import { useState, useEffect } from 'react';
-
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
