@@ -1,9 +1,9 @@
 [
     {
-        "name": "Project Neumann",
-        "position": "Organising Member",
-        "description": "Project Neumann is an informal organisation which is an evolution of the Computational Thinking Club. It is a more extensive intercollegiate initiative partly comprised of the same organising members as the club. The members meet multiple times a week to work on projects, discuss and conduct research, and collectively direct our explorations of computer science and mathematics. In the future, we plan to provide a platform for educating high schoolers in college-level computer science concepts and a network of undergraduate researchers with whom they may undertake projects.",
-        "start": "April 2018",
+        "name": "Fields Institute for Research in Mathematical Sciences",
+        "position": "Teaching Instructor",
+        "description": "I have been a paid outreach instructor at the Fields Institute and the Department of Mathematics, which have a joint outreach department. I've led three workshops, being in complete creative control over both their planning and execution. Two of them have been \"enrichment\" workshops (one in logic in computer science, and the other in cryptography), aimed at students looking for greater challenges and stimulation in mathematics beyond the ordinary curriculum. These workshops span 3-6 hours over five consecutive days. I recently concluded a five-week contest workshop, aimed at developing strong problem-solving habits and skills.  Prior to this, I volunteered with the Fields Institute teaching a hands-on workshop in topology.",
+        "start": "February 2023",
         "end": "Present"
     },
     {
@@ -15,18 +15,18 @@
         "end": "Present"
     },
     {
-        "name": "VIVUM 2020",
-        "position": "Event Coordinator for Technology, Registration, and Streaming",
-        "description": "Coordinated and led the heads of technology, registration, and streaming in successfully shifting a city-wide cultural fest, VIVUM 2020, to an online platform.",
-        "start": "May 2020",
-        "end": "August 2020"
-    },
-    {
         "name": "Computational Thinking Club",
         "position": "Founder and President",    
         "description": "With a team of 5 organisers, I helped brainstorm and devise a rigorous curriculum in mathematics and computer science, holding weekly lessons. I led the team in teaching programming and algorithms to 30+ members from grades 7-12. We also ran an online, open-source data science course, teaching skills in data visualization and analysis using programming to IB and IGCSE students. All the material for the course is available on BlitzNotes in the attached link.       ",
         "link": "https://www.blitznotes.org/datascience/",
         "start": "August 2019",
         "end": "March 2021"
+    },
+    {
+        "name": "VIVUM 2020",
+        "position": "Event Coordinator for Technology, Registration, and Streaming",
+        "description": "Coordinated and led the heads of technology, registration, and streaming in successfully shifting a city-wide cultural fest, VIVUM 2020, to an online platform during the pandemic. To be honest, I'm filling in details about this in university, and I don't remember some of the statistics. I could look it up, but why bother? I'm pretty sure we invited over 20 schools, and we had around 1000 concurrent viewers consistently over 7 days. We raised a lot of money for wildlife conservation. This was honestly really fun -- I got to learn a lot about streaming and video production, and I got to work with a lot of really cool people!",
+        "start": "May 2020",
+        "end": "August 2020"
     }
 ]

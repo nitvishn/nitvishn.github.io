@@ -3,6 +3,7 @@ import Header from "./HeaderComponent";
 import Footer from "./FooterComponent";
 import Home from "./HomeComponent";
 import Experience from "./ExperienceComponent";
+import ResearchComponent from "./ResearchComponent";
 import Projects from "./ProjectsComponent";
 import Sidebar from "./SidebarComponent";
 import Canvas from "./p5Component";
@@ -37,7 +38,7 @@ class Main extends Component {
 
         const SetupResearchAndWork = () => {
             return (
-                <Experience title="Research and Work Experience" work={this.props.research.concat(this.props.work)}></Experience>
+                <ResearchComponent title="Research" work={this.props.research.concat(this.props.work)}></ResearchComponent>
             )
         }
 
@@ -53,11 +54,11 @@ class Main extends Component {
             )
         }
 
-        const SetupEducation = () => {
-            return (
-                <Education courses={this.props.courses} specs={this.props.specs}></Education>
-            )
-        }
+        // const SetupEducation = () => {
+        //     return (
+        //         <Education courses={this.props.courses} specs={this.props.specs}></Education>
+        //     )
+        // }
 
         const SetupTalks = () => {
             return (
@@ -81,7 +82,7 @@ class Main extends Component {
                                 <Redirect from="/work" to="/research" />
                                 <Route path="/projects" component={SetupProjects}></Route>
                                 <Route path="/organisations" component={SetupOrganisations}></Route>
-                                <Route path="/education" component={SetupEducation}></Route>
+                                {/* <Route path="/education" component={SetupEducation}></Route> */}
                                 <Route path="/talks" component={SetupTalks}></Route>
                                 <Redirect to="/home" />
                             </Switch>

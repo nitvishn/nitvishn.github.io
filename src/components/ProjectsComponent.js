@@ -48,6 +48,7 @@ class Projects extends Component {
                 <h1 className="text-center">Projects</h1>
                 <hr></hr>
                 <br></br>
+
                 <div className="row justify-content-center">
                     {projects}
                 </div>

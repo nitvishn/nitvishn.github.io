@@ -78,6 +78,7 @@ export const SPECIALISATIONS = [
         institution: "Hong Kong University of Science and Technology",
         link: "https://www.coursera.org/account/accomplishments/specialization/certificate/C9GSDGVLBKER",
         platform: "Coursera",
+        date: "August 2021",
         courses: [
             {
                 name: "Front-End Web UI Frameworks and Tools: Bootstrap 4",
@@ -93,21 +94,6 @@ export const SPECIALISATIONS = [
                 name: "Server-side Development with NodeJS, Express and MongoDB",
                 link: "https://coursera.org/share/efd9135f10b8a43645b3be7d1b5ed0ed",
                 date: "August 2021"
-            },
-        ]
-    },
-    {
-        name: "Computer Science for Game Development",
-        institution: "HarvardX",
-        platform: "edX",
-        courses: [
-            {
-                name: "CS50’s Introduction to Computer Science",
-                link: "https://courses.edx.org/certificates/3c1cc9f179f04569887b79fd78b46b33",
-                date: "February 2018"
-            },
-            {
-                name: "CS50's Introduction to Game Development",
             },
         ]
     },
