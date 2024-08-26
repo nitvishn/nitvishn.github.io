@@ -83,7 +83,7 @@ class Main extends Component {
                                 {/* <Route path="/organisations" component={SetupOrganisations}></Route> */}
                                 {/* <Route path="/education" component={SetupEducation}></Route> */}
                                 {/* <Route path="/talks" component={SetupTalks}></Route> */}
-                                {/* <Redirect to="/home" /> */}
+                                <Redirect to="/home" />
                             </Switch>
                         </div>
                         <div className="col"></div>
