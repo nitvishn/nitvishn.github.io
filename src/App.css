@@ -1,3 +1,27 @@
+.flex-center {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 100vh;          /* Full viewport height */
+}
+
+.fade-out {
+  animation: fadeOut 15s forwards; 
+}
+
+.fade-out-slow{
+  animation: fadeOut 30s forwards; 
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
 .custom-nav {
   display: flex;
   justify-content: center;
@@ -21,12 +45,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.last-updated {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .navbar-collapse{

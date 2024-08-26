@@ -69,28 +69,27 @@ class Main extends Component {
         return (
             <>
                 <Canvas />
-                <Header />
+                {/* <Header /> */}
                 {/* <Sidebar></Sidebar> */}
                 <div className="container">
                     <div className="row">
                         <div className="col"></div>
-                        <div className="col-12 col-md-11 col-lg-10 col-xl-9">
-                            <br></br>
+                        <div className="col-12 col-md-9 col-lg-9 col-xl-9">
                             <Switch>
                                 <Route path="/home" component={Home}></Route>
-                                <Route path="/research" component={SetupResearchAndWork}></Route>
-                                <Redirect from="/work" to="/research" />
-                                <Route path="/projects" component={SetupProjects}></Route>
-                                <Route path="/organisations" component={SetupOrganisations}></Route>
+                                {/* <Route path="/research" component={SetupResearchAndWork}></Route> */}
+                                {/* <Redirect from="/work" to="/research" /> */}
+                                {/* <Route path="/projects" component={SetupProjects}></Route> */}
+                                {/* <Route path="/organisations" component={SetupOrganisations}></Route> */}
                                 {/* <Route path="/education" component={SetupEducation}></Route> */}
-                                <Route path="/talks" component={SetupTalks}></Route>
-                                <Redirect to="/home" />
+                                {/* <Route path="/talks" component={SetupTalks}></Route> */}
+                                {/* <Redirect to="/home" /> */}
                             </Switch>
                         </div>
                         <div className="col"></div>
                     </div>
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </>
         );
     }
