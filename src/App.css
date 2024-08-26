@@ -5,11 +5,19 @@
   height: 100vh;          /* Full viewport height */
 }
 
-.fade-out {
+.fade-out-10 {
+  animation: fadeOut 10s forwards; 
+}
+
+.fade-out-15 {
   animation: fadeOut 15s forwards; 
 }
 
-.fade-out-slow{
+.fade-out-20 {
+  animation: fadeOut 20s forwards; 
+}
+
+.fade-out-30{
   animation: fadeOut 30s forwards; 
 }
 

@@ -7,14 +7,12 @@ class Home extends Component {
         return (
             <div className="container flex-center">
                 <div className="jumbotron bg-transparent">
-                    <div className="fade-out">
-                        <h1 className="display-4">Hi, I'm Vishnu.</h1>
-                        <p className="lead">I'm an undergraduate student at the University of Toronto studying computer science and mathematics. </p>
-                        <br></br>
-                        <p className="lead">This website is under reconstruction. Come back soon!</p>
-                    </div>
+                    <h1 className="display-4 fade-out-10">Hi, I'm Vishnu.</h1>
+                    <p className="lead fade-out-15">I'm an undergraduate student at the University of Toronto studying computer science and mathematics. </p>
+                    <br></br>
+                    <p className="lead fade-out-20">This website is under reconstruction. Come back soon!</p>
                     {/* <br></br> */}
-                    <div className="fade-out-slow">
+                    <div className="fade-out-30">
                     <p style={{ color: "gray" }}>I am reachable at nitvishn [at] gmail [dot] com.</p>
                     </div>
                     {/* <p>I am pursuing a research career in computer science! My interests are broad and theory-driven, and I currently spend my time working across two very different areas: computer graphics and formal verification. A general theme for my research is <i> seeing mathematics come alive in computation. </i> </p>
